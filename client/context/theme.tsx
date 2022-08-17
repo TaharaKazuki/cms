@@ -1,6 +1,11 @@
-import React, { useContext, useEffect, useState, createContext, FC, ReactNode } from 'react'
+import React, { useEffect, useState, createContext, FC, ReactNode } from 'react'
 
-const ThemeContext = createContext({})
+type ThemeContextType = {
+  theme: string | null
+  setTheme: React.Dispatch<React.SetStateAction<string | null>>
+}
+
+const ThemeContext = createContext({} as ThemeContextType)
 
 type Props = {
   children: ReactNode
