@@ -16,6 +16,7 @@ const ThemeProvider: FC<Props> = ({ children }) => {
 
   useEffect(() => {
     if (localStorage.getItem('theme')) {
+      console.info('通貨2')
       setTheme(localStorage.getItem('theme'))
     }
   }, [])

@@ -1,5 +1,3 @@
-// import 'antd/dist/antd.css'
-import 'antd/dist/antd.dark.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from '../context/theme'
 
